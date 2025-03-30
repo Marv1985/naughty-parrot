@@ -1,0 +1,35 @@
+
+/*------------------------------*\
+    WORDPRESS DASHBOARD STYLES
+\*------------------------------*/
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+	width: 100%;
+}
+
+.interface-complementary-area__fill,
+.interface-complementary-area {
+	width: 380px !important;
+}
+  
+.block-editor-block-types-list__item-icon {
+	padding-bottom: 5px;
+}
+
+.block-editor-block-icon.has-colors svg {
+	height: 3.3rem;
+	width: auto;
+	max-height: unset;
+	max-width: unset;
+}
+
+.block-editor-inserter__panel-title {
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: black;
+}
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+

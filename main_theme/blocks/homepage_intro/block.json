@@ -1,0 +1,24 @@
+{
+  "name": "acf/homepageintro",
+  "title": "Homepage Intro",
+  "description": "",
+  "style": "file:./homepage_intro.css",
+  "script": "file:./.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["homepage intro"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "homepage_intro.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}
