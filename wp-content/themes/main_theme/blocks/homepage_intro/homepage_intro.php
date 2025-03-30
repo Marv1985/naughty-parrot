@@ -9,6 +9,6 @@
 
 ?>
 
-<div class="homepage_intro">
+<div class="homepage_intro_parent">
 
 </div>

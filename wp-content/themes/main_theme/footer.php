@@ -1,10 +1,24 @@
+<?php 
+	$privacy_policy = esc_html(get_field('privacy_policy', 'option'));
+	$terms_and_conditions = esc_html(get_field('terms_&_conditions', 'option'));
+?>
+			
+			
 			<footer class="footer" role="contentinfo">
+				<?php get_template_part( 'template_parts/footer_text_slider'); ?>
+				<?php get_template_part( 'template_parts/statistics'); ?>
+				<?php get_template_part( 'template_parts/footer_form'); ?>
 
+				<div class="small_print max_width">
+					<p class="copyright">
+						&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?> 
+					</p>
+					<div class="page_links">
+						<a href="<?php echo $privacy_policy; ?>">Privacy Policy</a>
+						<a href="<?php echo $terms_and_conditions; ?>">Terms & Conditions</a>
+					</div>
+				</div>
 				
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
 
 			</footer>
 

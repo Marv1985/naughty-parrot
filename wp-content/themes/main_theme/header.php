@@ -25,7 +25,7 @@
         </script>
 
 	</head>
-	<body <?php body_class(); ?>>
+	<body id='top_of_page' <?php body_class(); ?>>
 
 	<?php 
 		$logo = esc_url(get_field('logo', 'option'));

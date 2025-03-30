@@ -88,11 +88,36 @@ function html5blank_nav()
 }
 
 // HTML5 Blank navigation
-function footer_menu()
+function learn_more()
 {
 	wp_nav_menu(
 	array(
-		'theme_location'  => 'extra-menu',
+		'theme_location'  => 'learn-more-menu',
+		'menu'            => '',
+		'container'       => 'div',
+		'container_class' => 'menu-{menu slug}-container',
+		'container_id'    => '',
+		'menu_class'      => 'menu',
+		'menu_id'         => '',
+		'echo'            => true,
+		'fallback_cb'     => 'wp_page_menu',
+		'before'          => '',
+		'after'           => '',
+		'link_before'     => '',
+		'link_after'      => '',
+		'items_wrap'      => '<ul>%3$s</ul>',
+		'depth'           => 0,
+		'walker'          => ''
+		)
+	);
+}
+
+// HTML5 Blank navigation
+function get_involved()
+{
+	wp_nav_menu(
+	array(
+		'theme_location'  => 'get-involved-menu',
 		'menu'            => '',
 		'container'       => 'div',
 		'container_class' => 'menu-{menu slug}-container',
@@ -132,6 +157,8 @@ function frontend_scripts() {
     wp_enqueue_script('dark_mode_button', get_template_directory_uri() . '/js/dark_mode_button.js');
     wp_enqueue_script('menu_button', get_template_directory_uri() . '/js/menu_button.js');
     wp_enqueue_script('audio_button', get_template_directory_uri() . '/js/audio_button.js');
+    wp_enqueue_script('footer_text_slider', get_template_directory_uri() . '/js/footer_text_slider.js');
+    wp_enqueue_script('statistics', get_template_directory_uri() . '/js/statistics.js');
 }
 
 /*------------------------------------*\
@@ -178,8 +205,8 @@ function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
-        'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+        'learn-more-menu' => __('Learn More Menu', 'html5blank'), // Sidebar Navigation
+        'get-involved-menu' => __('Get Involved Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
     ));
 }
 
