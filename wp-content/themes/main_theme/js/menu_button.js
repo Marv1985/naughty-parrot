@@ -15,7 +15,7 @@ const menu_button = () => {
         .fromTo(
             popOutMenu,
             { autoAlpha: 0, width: 0, height: 0, borderRadius: '50%', position: 'fixed' }, 
-            { right: 0, autoAlpha: 1, borderRadius: 0, duration: 0.2, width: '100vw', height: '100vh', ease: 'sine.out' }
+            { right: 0, top: 0, autoAlpha: 1, borderRadius: 0, duration: 0.2, width: '100vw', height: '100vh', ease: 'sine.out' }
         )
         .set(body, { overflowX: 'hidden' }, 0);
 

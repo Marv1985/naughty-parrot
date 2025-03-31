@@ -651,6 +651,62 @@ a {
 }
 
 
+/*----------------------*\
+    MOUSE MOVE IMAGES
+\*----------------------*/
+.mouse_move_images {
+    position: absolute;
+	height: 100vh;
+	min-height: 60rem;
+	overflow: hidden;
+    top: 0;
+    left: -15%;
+	z-index: 0;
+    width: clamp(90rem, 92.31vi + 53.08rem, 330rem);
+}
+
+.mouse_move_images img {
+    position: absolute;
+    width: 100%;
+}
+
+.mouse_move_images img:nth-of-type(1) {
+    z-index: 3;
+}
+
+.mouse_move_images img:nth-of-type(2) {
+    z-index: 2;
+}
+
+.mouse_move_images img:nth-of-type(3) {
+    z-index: 1;
+}
+
+/* 3000px */
+@media screen and (min-width: 187.5em) {
+    .mouse_move_images {
+        width: 120vw;
+    }
+}
+
+/* 500px */
+@media screen and (max-width: 31.25em) {
+    .mouse_move_images {
+        left: -110%;
+        width: 108rem;
+    }
+
+    .mouse_move_images img:nth-of-type(2) {
+        transform: translateY(-59%);
+    }
+
+    .mouse_move_images img:nth-of-type(3) {
+        transform: translateY(-29%);
+    }
+    
+}
+
+
 /*--------------*\
     STATISTICS
 \*--------------*/
