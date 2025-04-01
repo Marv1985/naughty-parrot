@@ -1,0 +1,24 @@
+{
+  "name": "acf/singleeventpost",
+  "title": "Single Event Post",
+  "description": "",
+  "style": "file:./single_event_post.css",
+  "script": "file:./.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["event"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "single_event_post.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}

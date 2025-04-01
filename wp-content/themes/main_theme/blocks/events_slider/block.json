@@ -1,0 +1,24 @@
+{
+  "name": "acf/eventsslider",
+  "title": "Events Slider",
+  "description": "",
+  "style": "file:./events_slider.css",
+  "script": "file:./events_slider.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["events", "slider"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "events_slider.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}

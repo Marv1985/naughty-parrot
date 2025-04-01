@@ -28,6 +28,11 @@
 	color: black;
 }
 
+.wp-block-post-title {
+    word-break: break-word;
+    color: black;
+}
+
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/

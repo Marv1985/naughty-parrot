@@ -117,6 +117,42 @@ body {
 	transition: background-color 0.3s, color 0.3s;
 }
 
+.location_dot {
+    height: 1.3rem;
+    width: 1.3rem;
+    border: .1rem solid var(--text_color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: .1rem;
+}
+
+.location_dot span {
+	width: .7rem;
+	height: .7rem;
+	border-radius: 50%;
+	background-color: var(--text_color);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: relative;
+	margin: unset;
+	top: unset;
+	bottom: unset;
+	left: unset;
+	right: unset;
+	width: unset;
+	height: unset;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	content: '';
+}
+
 button {
 	background: none;
     border: none;
@@ -172,28 +208,21 @@ a {
 	border-color: var(--orange);
 }
 
+.button.Fill,
+.button.White {
+	border: .2rem solid;
+}
+
+.button.White,
 .main_buttons_parent .button.White {
 	border-color: var(--text_color);
 }
 
+.button.Fill,
 .main_buttons_parent .button.Fill {
 	border-color: var(--text_color);
 	background-color: var(--text_color);
 	color: var(--background_color);
-}
-
-.main_buttons_parent .button.Orange:hover {
-	background-color: var(--orange);
-}
-
-.main_buttons_parent .button.White:hover {
-	background-color: var(--text_color);
-	color: var(--background_color);
-}
-
-.main_buttons_parent .button.Fill:hover {
-	background-color: var(--background_color);
-	color: var(--text_color);
 }
 
 /*-------------*\
@@ -890,6 +919,24 @@ a {
 	.footer_form_parent .nav_links a:hover::after {
 		opacity: 1;
 	}
+
+
+	.main_buttons_parent .button.Orange:hover {
+		background-color: var(--orange);
+	}
+
+	.button.White:hover,
+	.main_buttons_parent .button.White:hover {
+		background-color: var(--text_color);
+		color: var(--background_color);
+	}
+
+	.button.Fill:hover,
+	.main_buttons_parent .button.Fill:hover {
+		background-color: var(--background_color);
+		color: var(--text_color);
+	}
+
 }
 
 

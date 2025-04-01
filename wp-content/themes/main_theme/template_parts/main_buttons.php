@@ -12,7 +12,7 @@
             <?php if($button_type === 'Page Link'): ?>
                 <a class='<?php echo $button_color; ?> button' href="<?php echo $page_link; ?>"><?php echo $button_text; ?></a>
             <?php elseif($button_type === 'Custom Url'): ?>
-                <a class='<?php echo $button_color; ?> button' href="<?php echo $custom_url; ?>"><?php echo $button_text; ?></a>
+                <a target='_blank' class='<?php echo $button_color; ?> button' href="<?php echo $custom_url; ?>"><?php echo $button_text; ?></a>
             <?php endif; ?>
         <?php endwhile; ?>
     <?php endif; ?>
