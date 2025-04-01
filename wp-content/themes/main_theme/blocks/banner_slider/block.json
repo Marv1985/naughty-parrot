@@ -1,0 +1,24 @@
+{
+  "name": "acf/bannerslider",
+  "title": "Banner Slider",
+  "description": "",
+  "style": "file:./banner_slider.css",
+  "script": "file:./banner_slider.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["banner", "slider"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "banner_slider.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}

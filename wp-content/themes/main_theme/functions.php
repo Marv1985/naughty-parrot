@@ -548,6 +548,7 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/homepage_intro' );
     register_block_type( __DIR__ . '/blocks/large_title_icon_and_button' );
     register_block_type( __DIR__ . '/blocks/image_slider' );
+    register_block_type( __DIR__ . '/blocks/banner_slider' );
 }
 add_action('init', 'register_acf_blocks');
 
