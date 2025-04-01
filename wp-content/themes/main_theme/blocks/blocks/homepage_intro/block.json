@@ -6,7 +6,7 @@
   "script": "file:./.js",
   "category": "custom-block-category",
   "icon": "",
-  "keywords": ["homepage", "intro"],
+  "keywords": ["homepage intro"],
   "acf": {
     "mode": "preview",
     "renderTemplate": "homepage_intro.php"

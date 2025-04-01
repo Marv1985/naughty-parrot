@@ -5,15 +5,6 @@
     overflow-x: hidden;
 }
 
-.homepage_intro_parent h1 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
-}
-
 .homepage_intro_parent .intro_container {
     position: relative;
     height: 100%;
@@ -92,7 +83,6 @@
     transition: all .3s ease;
     position: relative;
     bottom: 0;
-    z-index: 1;
 }
 
 .large_buttons .large_buttons_button {
@@ -107,7 +97,7 @@
     height: 95%;
     border-radius: 5rem;
     background-color: var(--text_color);
-    z-index: 0;
+    z-index: -1;
     transition: all .3s ease;
 }
 

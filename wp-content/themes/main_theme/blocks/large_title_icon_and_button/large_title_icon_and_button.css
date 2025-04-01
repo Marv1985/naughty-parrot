@@ -1,0 +1,37 @@
+.large_title_icon_and_button_parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: clamp(5rem, 1.14vi + 4.55rem, 6rem);
+    padding-top: 8.3rem;
+    overflow: hidden;
+}
+
+.large_title_icon_and_button_parent h3 {
+    position: relative;
+}
+
+.large_title_icon_and_button_parent h3 span {
+    color: var(--orange);
+}
+
+.large_title_icon_and_button_parent h2 {
+    margin-top: clamp(0.7rem, 0.11vi + 0.65rem, 0.8rem);
+    margin-bottom: clamp(2.9rem, 0.8vi + 2.58rem, 3.6rem);
+}
+
+.large_title_icon_and_button_parent .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: clamp(5rem, 5.68vi + 2.73rem, 10rem);
+    transform: translate(110%, 3%);
+}
+
+/* 500px */
+@media screen and (max-width: 31.25em) {
+    .large_title_icon_and_button_parent .icon {
+        transform: translate(105%, -22%);
+    }
+    
+}

@@ -1,0 +1,27 @@
+.image_slider_parent {
+    padding-bottom: 6rem;
+}
+
+.image_slider_parent .swiper-slide {
+    width: clamp(15rem, 9.09vi + 11.36rem, 23rem);
+}
+
+.image_slider_parent .swiper-slide.Portrait img {
+    aspect-ratio: 1/1.3;
+}
+
+.image_slider_parent .swiper-slide.Square img {
+    aspect-ratio: 1/1;
+}
+
+.image_slider_parent .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: clamp(1.2rem, 0.68vi + 0.93rem, 1.8rem);
+}
+
+.image_slider_parent .swiper-wrapper {
+    transition-timing-function: linear;
+    align-items: center;
+}

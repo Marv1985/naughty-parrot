@@ -31,5 +31,75 @@
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
+.max_width .button {
+    cursor: pointer;
+    padding: 0rem 1.5rem;
+    line-height: normal;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    font-family: var(--anton);
+    transition: all .3s ease;
+    background-color: transparent;
+    color: var(--text_color);
+}
 
+.large_title_icon_and_button_parent .icon {
+	width: 8rem;
+}
 
+.homepage_intro_parent .spinning_image_container,
+.max_width a {
+	pointer-events: none;
+}
+
+ul, strong {
+	color: black;
+}
+
+section {
+	background-color: var(--background_color);
+}
+
+.homepage_intro_parent {
+	height: 79vh;
+}
+
+.mouse_move_images {
+	height: 78vh;
+}
+
+.homepage_intro_parent .header_image {
+    width: 52rem;
+}
+
+.homepage_intro_parent .spinning_image {
+    width: 12rem;
+}
+
+.mouse_move_images img:nth-of-type(1) {
+    top: -125%;
+    left: -19%;
+}
+
+.mouse_move_images img:nth-of-type(2) {
+    top: -120%;
+}
+
+.mouse_move_images img:nth-of-type(3) {
+    top: -80%;
+}
+
+.image_slider_parent {
+    padding: 3rem 0;
+} 
+
+.image_slider_parent .swiper-wrapper {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.image_slider_parent .swiper-slide {
+    min-width: 22rem;
+}

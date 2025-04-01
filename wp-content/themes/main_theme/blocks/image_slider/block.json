@@ -1,15 +1,15 @@
 {
-  "name": "acf/homepageintro",
-  "title": "Homepage Intro",
+  "name": "acf/imageslider",
+  "title": "Image Slider",
   "description": "",
-  "style": "file:./homepage_intro.css",
-  "script": "file:./.js",
+  "style": "file:./image_slider.css",
+  "script": "file:./image_slider.js",
   "category": "custom-block-category",
   "icon": "",
-  "keywords": ["homepage", "intro"],
+  "keywords": ["image", "slider"],
   "acf": {
     "mode": "preview",
-    "renderTemplate": "homepage_intro.php"
+    "renderTemplate": "image_slider.php"
   },
   "supports": {
     "anchor": true

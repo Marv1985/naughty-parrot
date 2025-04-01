@@ -1,15 +1,15 @@
 {
-  "name": "acf/homepageintro",
-  "title": "Homepage Intro",
+  "name": "acf/largetitleiconandbutton",
+  "title": "Large Title Icon and Button",
   "description": "",
-  "style": "file:./homepage_intro.css",
-  "script": "file:./.js",
+  "style": "file:./large_title_icon_and_button.css",
+  "script": "file:./large_title_icon_and_button.js",
   "category": "custom-block-category",
   "icon": "",
-  "keywords": ["homepage", "intro"],
+  "keywords": ["title", "icon", "button"],
   "acf": {
     "mode": "preview",
-    "renderTemplate": "homepage_intro.php"
+    "renderTemplate": "large_title_icon_and_button.php"
   },
   "supports": {
     "anchor": true

@@ -168,6 +168,8 @@ function frontend_scripts() {
 \*------------------------------------*/
 function backend_scripts() {
     // Enqueue Styles
+    wp_enqueue_style('anton', 'https://fonts.googleapis.com/css2?family=Anton&display=swap', false);
+    wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('backend_styles', get_template_directory_uri() . '/backend_styles.css');
 
    // Enqueue Scripts
@@ -544,6 +546,8 @@ function register_acf_blocks() {
 
     // Define an array of block names
     register_block_type( __DIR__ . '/blocks/homepage_intro' );
+    register_block_type( __DIR__ . '/blocks/large_title_icon_and_button' );
+    register_block_type( __DIR__ . '/blocks/image_slider' );
 }
 add_action('init', 'register_acf_blocks');
 
