@@ -1,0 +1,24 @@
+{
+  "name": "acf/artistsofthemonth",
+  "title": "Artists Of The Month",
+  "description": "",
+  "style": "file:./artists_of_the_month.css",
+  "script": "file:./.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["artists"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "artists_of_the_month.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}

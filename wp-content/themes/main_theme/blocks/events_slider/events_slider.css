@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    padding-bottom: 10rem;
+    padding-bottom: clamp(6rem, 6.82vi + 3.27rem, 12rem);
     flex-direction: column;
     gap: 5rem;
     align-items: flex-start;

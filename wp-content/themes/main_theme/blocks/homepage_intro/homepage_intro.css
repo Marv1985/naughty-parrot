@@ -89,7 +89,7 @@
     border: .2rem solid var(--text_color);
     background-color: var(--background_color);
     border-radius: 5rem;
-    transition: all .3s ease;
+    transition: all .12s ease-in-out;
     position: relative;
     bottom: 0;
     z-index: 1;
@@ -171,5 +171,12 @@
 @media screen and (max-width: 31.25em) {
     .large_buttons {
         flex-direction: column;
+    }
+}
+
+/* 700px */
+@media screen and (max-height: 43.75em) {
+    .homepage_intro_parent .intro_container {
+        gap: 7rem;
     }
 }

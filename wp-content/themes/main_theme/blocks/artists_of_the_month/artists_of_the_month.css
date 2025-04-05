@@ -1,0 +1,120 @@
+.artists_of_the_month_parent {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.1rem, 1.25vi + -0.4rem, 1.2rem);
+    padding-bottom: clamp(3.5rem, 7.39vi + 0.55rem, 10rem);
+}
+
+.artists_of_the_month_parent .artists_container {
+    display: flex;
+    gap: clamp(1.3rem, 0.8vi + 0.98rem, 2rem);
+    justify-content: center;
+    align-items: center;
+}
+
+.artists_of_the_month_parent .artist {
+    flex: 1;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.artists_of_the_month_parent .artist .artist_image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+}
+
+.artists_of_the_month_parent .socials {
+    flex-direction: row;
+    transform: translateY(-50%);
+    gap: clamp(0.5rem, 0.34vi + 0.36rem, 0.8rem);
+}
+
+.artists_of_the_month_parent .socials a {
+    width: clamp(2.5rem, 1.14vi + 2.05rem, 3.5rem);
+    height: clamp(2.5rem, 1.14vi + 2.05rem, 3.5rem);
+}
+
+.artists_of_the_month_parent .socials img {
+    max-height: clamp(1.3rem, 0.57vi + 1.07rem, 1.8rem);
+}
+
+.artists_of_the_month_parent .mobile_icon {
+    display: none;
+}
+
+.artists_of_the_month_parent .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artists_of_the_month_parent .title h2, 
+.artists_of_the_month_parent .title h3 {
+    text-align: center;
+    position: relative;
+    width: fit-content;
+}
+
+.artists_of_the_month_parent .title h2 span, 
+.artists_of_the_month_parent .title h3 span {
+    z-index: 1;
+}
+
+.artists_of_the_month_parent .web_icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: clamp(6.8rem, 2.27vi + 5.89rem, 8.8rem);
+    transform: translate(-56%, -36%) rotate(-14deg);
+}
+
+.artists_of_the_month_parent .artist_title {
+    transform: translateY(50%);
+    line-height: normal;
+    font-family: var(--anton);
+    background-color: var(--background_color);
+    transition: all .3s ease;
+    border-radius: 5rem;
+    padding: .1rem 1.8rem;
+    font-size: clamp(2rem, 1.14vi + 1.55rem, 3rem);
+    border: .1rem solid var(--text_color);
+}
+
+.artists_of_the_month_parent .artist_sub_title {
+    font-family: var(--anton);
+    font-size: clamp(1.6rem, 0.68vi + 1.33rem, 2.2rem);
+}
+
+
+/* 800px */
+@media screen and (max-width: 50em) {
+    .artists_of_the_month_parent .web_icon {
+        display: none;
+    }
+
+
+    .artists_of_the_month_parent .mobile_icon {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: clamp(4rem, 1.48vi + 3.41rem, 5.3rem);
+        transform: translate(-125%, -5%) rotate(-14deg);
+    }
+
+    .artists_of_the_month_parent .artist {
+        max-width: 50rem;
+    }
+
+    .artists_of_the_month_parent .artists_container {
+        flex-direction: column;
+    }
+}

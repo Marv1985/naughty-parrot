@@ -1,0 +1,24 @@
+{
+  "name": "acf/podcastssection",
+  "title": "Podcasts Section",
+  "description": "",
+  "style": "file:./podcasts_section.css",
+  "script": "file:./.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["podcasts"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "podcasts_section.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}

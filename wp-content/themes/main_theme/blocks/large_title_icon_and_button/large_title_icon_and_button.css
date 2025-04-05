@@ -7,6 +7,11 @@
     overflow: hidden;
 }
 
+.large_title_icon_and_button_parent h2,
+.large_title_icon_and_button_parent h3 {
+    text-align: center;
+}
+
 .large_title_icon_and_button_parent h3 {
     position: relative;
 }

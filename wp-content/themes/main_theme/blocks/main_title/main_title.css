@@ -1,0 +1,54 @@
+.main_title_parent {
+    height: clamp(32rem, 26.14vi + 21.55rem, 55rem);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_title_parent.margin_bottom {
+    margin-bottom: clamp(2rem, 6.82vi + -0.73rem, 8rem);
+}
+
+.main_title_parent .title_container {
+    z-index: 1;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_title_parent h3,
+.main_title_parent h1 {
+    text-align: center;
+}
+
+.party_theme,
+.chill_theme {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+html.dark .party_theme .main_title_parent {
+    position: relative;
+    visibility: visible;
+}
+html.light .chill_theme .main_title_parent {
+    position: relative;
+    visibility: visible;
+}
+html.light .party_theme .main_title_parent {
+    position: absolute;
+    visibility: hidden;
+}
+html.dark .chill_theme .main_title_parent {
+    position: absolute;
+    visibility: hidden;
+}
+
+.about_us_page .main_title_parent {
+    display: none;
+}

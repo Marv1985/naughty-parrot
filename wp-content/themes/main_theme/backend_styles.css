@@ -36,6 +36,7 @@
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
+.other_buttons .button,
 .max_width .button {
     cursor: pointer;
     padding: 0rem 1.5rem;
@@ -48,9 +49,32 @@
     color: var(--text_color);
 }
 
+.events_slider_parent .title {
+    flex-wrap: nowrap;
+}
+
+.events_slider_parent .swiper-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+}
+
+.events_slider_parent {
+    padding-top: 3rem;
+    gap: 3rem;
+}
+
+.events_slider_parent .swiper-slide {
+    min-width: 60rem;
+}
+
 .banner_slider_parent {
     padding: 7rem 0;
     overflow: hidden;
+}
+
+.events_slider_parent .swiper {
+    margin: 0 auto;
 }
 
 .banner_slider_parent a {

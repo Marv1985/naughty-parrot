@@ -10,26 +10,26 @@ const intro_images_slide_in = () => {
     if (window.innerWidth < 800) {
         // Adjusted values for smaller screens
         tl.fromTo('.mouse_move_images img:nth-of-type(1)',
-            {x: '50%', y: '-101%'},
+            {x: '-50%', y: '-101%'},
             {x: 0, y: '-71%', duration: 2}, 0
         );
         tl.fromTo('.mouse_move_images img:nth-of-type(2)',
-            {x: '-30%', y: '-99%'},
+            {x: '30%', y: '-100%'},
             {x: 0, y: '-57%', duration: 2}, 0
         );
         tl.fromTo('.mouse_move_images img:nth-of-type(3)',
-            {y: '-94%'},
-            {y: '-27%', duration: 1.5}, 0
+            {x: '0%', y: '-94%'},
+            {y: '-27%', duration: 1.8}, 0
         );
     } else {
         // Default values for larger screens
         tl.fromTo('.mouse_move_images img:nth-of-type(1)',
             {x: '70%', y: '-100%'},
-            {x: 0, y: '-74%', duration: 2.3}, 0
+            {x: 0, y: '-74%', duration: 2}, 0
         );
         tl.fromTo('.mouse_move_images img:nth-of-type(2)',
             {x: '-40%', y: '-100%'},
-            {x: 0, y: '-63%', duration: 2.3}, 0
+            {x: 0, y: '-63%', duration: 2}, 0
         );
         tl.fromTo('.mouse_move_images img:nth-of-type(3)',
             {y: '-100%'},
@@ -38,5 +38,4 @@ const intro_images_slide_in = () => {
     }
 };
 
-document.addEventListener('DOMContentLoaded', intro_images_slide_in);
-// window.addEventListener('resize', intro_images_slide_in);
+document.addEventListener('DOMContentLoaded', intro_images_slide_in)

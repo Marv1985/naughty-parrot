@@ -25,3 +25,31 @@
     transition-timing-function: linear;
     align-items: center;
 }
+
+.party_theme,
+.chill_theme {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+html.dark .party_theme .image_slider_parent {
+    position: relative;
+    visibility: visible;
+}
+html.light .chill_theme .image_slider_parent {
+    position: relative;
+    visibility: visible;
+}
+html.light .party_theme .image_slider_parent {
+    position: absolute;
+    visibility: hidden;
+}
+html.dark .chill_theme .image_slider_parent {
+    position: absolute;
+    visibility: hidden;
+}
+
+.about_us_page .image_slider_parent {
+    display: none;
+}

@@ -1,33 +1,30 @@
 const dark_mode_button = () => {
-    // Get both checkboxes (since you have two)
     const toggles = document.querySelectorAll('.themeToggle');
+    const root = document.documentElement;
 
-    // Apply the saved theme preference
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light") {
-        document.documentElement.classList.add("light");
+    // Utility function to update the theme
+    const setTheme = (theme) => {
+        // Remove both classes first
+        root.classList.remove("light", "dark");
+
+        // Add the selected one
+        root.classList.add(theme);
+        localStorage.setItem("theme", theme);
+
+        // Sync all toggles
         toggles.forEach(toggle => {
-            toggle.checked = true; // Set both toggles to 'checked' if the theme is 'light'
+            toggle.checked = theme === "light";
         });
-    }
+    };
 
-    // Add event listener to each toggle
+    // On load: apply saved theme
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    setTheme(savedTheme);
+
+    // Add event listeners
     toggles.forEach(toggle => {
         toggle.addEventListener("change", function () {
-            // Update theme based on the toggle's state
-            if (toggle.checked) {
-                document.documentElement.classList.add("light");
-                localStorage.setItem("theme", "light");
-            } else {
-                document.documentElement.classList.remove("light");
-                localStorage.setItem("theme", "dark");
-            }
-            // Sync the state of the other toggle
-            toggles.forEach(otherToggle => {
-                if (otherToggle !== toggle) {
-                    otherToggle.checked = toggle.checked; // Make the other toggle match the current one
-                }
-            });
+            setTheme(toggle.checked ? "light" : "dark");
         });
     });
 };

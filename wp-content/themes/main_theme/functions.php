@@ -551,6 +551,12 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/banner_slider' );
     register_block_type( __DIR__ . '/blocks/events_slider' );
     register_block_type( __DIR__ . '/blocks/single_event_post' );
+    register_block_type( __DIR__ . '/blocks/artists_of_the_month' );
+    register_block_type( __DIR__ . '/blocks/single_artist_post' );
+    register_block_type( __DIR__ . '/blocks/podcasts_section' );
+    register_block_type( __DIR__ . '/blocks/main_title' );
+    register_block_type( __DIR__ . '/blocks/title_and_text_area' );
+   
 }
 add_action('init', 'register_acf_blocks');
 

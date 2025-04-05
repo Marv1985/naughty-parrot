@@ -40,7 +40,9 @@
 					<a class='web_logo' href="<?php echo home_url(); ?>"><img src="<?php echo $logo; ?>" alt="logo"></a>
 					<a class='mobile_logo' href="<?php echo home_url(); ?>"><?php echo $mobile_logo_svg; ?></a>
 					<div class="right_side">
-						<?php get_template_part( 'template_parts/dark_mode_button'); ?>
+						<?php if(!is_page('86')): ?>
+							<?php get_template_part( 'template_parts/dark_mode_button'); ?>
+						<?php endif; ?>
 						<?php get_template_part( 'template_parts/menu_button'); ?>
 					</div>
 				</div>

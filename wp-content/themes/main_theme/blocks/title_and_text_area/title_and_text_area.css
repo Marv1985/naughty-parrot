@@ -1,0 +1,34 @@
+
+.title_and_text_area_parent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.party_theme,
+.chill_theme {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+html.dark .party_theme .title_and_text_area_parent {
+    position: relative;
+    visibility: visible;
+}
+html.light .chill_theme .title_and_text_area_parent {
+    position: relative;
+    visibility: visible;
+}
+html.light .party_theme .title_and_text_area_parent {
+    position: absolute;
+    visibility: hidden;
+}
+html.dark .chill_theme .title_and_text_area_parent {
+    position: absolute;
+    visibility: hidden;
+}
+
+.about_us_page .title_and_text_area_parent {
+    display: none;
+}

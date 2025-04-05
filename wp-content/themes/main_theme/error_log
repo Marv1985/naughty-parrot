@@ -6,3 +6,7 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/naughmxh/public_html/wp-content/themes/main_theme/index.php on line 1
+[01-Apr-2025 19:20:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/naughmxh/public_html/wp-content/themes/main_theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/naughmxh/public_html/wp-content/themes/main_theme/index.php on line 1

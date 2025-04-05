@@ -9,7 +9,7 @@ const banner_slider = () => {
     const swiper = new Swiper(banner_slider_swiper, {
         spaceBetween: 13,
         loop: true,
-        speed: 6500,  
+        speed: 5000,  
         centeredSlides: true,                                                            
         slidesPerView: 'auto',
         updateOnWindowResize: true,

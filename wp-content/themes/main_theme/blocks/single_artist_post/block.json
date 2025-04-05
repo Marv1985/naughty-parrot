@@ -1,0 +1,24 @@
+{
+  "name": "acf/singleartistpost",
+  "title": "Single Artist Post",
+  "description": "",
+  "style": "file:./single_artist_post.css",
+  "script": "file:./.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["artist", "post"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "single_artist_post.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}

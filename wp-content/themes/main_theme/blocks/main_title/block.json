@@ -1,0 +1,24 @@
+{
+  "name": "acf/maintitle",
+  "title": "Main Title",
+  "description": "",
+  "style": "file:./main_title.css",
+  "script": "file:./.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["main", "title"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "main_title.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}

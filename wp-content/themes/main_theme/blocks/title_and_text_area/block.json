@@ -1,0 +1,24 @@
+{
+  "name": "acf/titleandtextarea",
+  "title": "Title and Text Area",
+  "description": "",
+  "style": "file:./title_and_text_area.css",
+  "script": "file:./.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["title", "text"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "title_and_text_area.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}
