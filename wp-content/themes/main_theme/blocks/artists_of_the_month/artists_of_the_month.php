@@ -13,6 +13,7 @@ $icon = esc_url(get_field('icon'));
 
 <section>
     <div class="artists_of_the_month_parent max_width">
+        <div id='artist_of_the_month'></div>
         <div class="title">
             <h3>
                 <img class='mobile_icon' src="<?php echo $icon; ?>" alt="icon">

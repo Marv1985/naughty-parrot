@@ -2,7 +2,11 @@
 .title_and_text_area_parent {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: clamp(2rem, 1.14vi + 1.55rem, 3rem);
+    max-width: 70rem;
+    padding-top: clamp(4rem, 6.82vi + 1.27rem, 10rem);
+    padding-bottom: clamp(9rem, 6.82vi + 6.27rem, 15rem);
+    text-align: center;
 }
 
 .party_theme,

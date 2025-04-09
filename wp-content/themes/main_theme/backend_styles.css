@@ -92,11 +92,19 @@
 	width: 8rem;
 }
 
+.podcasts_parent {
+    padding-top: 6rem;
+}
+
 .homepage_intro_parent .spinning_image_container,
 .max_width a,
 section a
  {
 	pointer-events: none;
+}
+
+.single_event_post_parent .content_area {
+    gap: 4rem;
 }
 
 ul, strong {

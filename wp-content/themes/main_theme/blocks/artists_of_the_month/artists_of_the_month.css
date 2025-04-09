@@ -3,6 +3,13 @@
     flex-direction: column;
     gap: clamp(0.1rem, 1.25vi + -0.4rem, 1.2rem);
     padding-bottom: clamp(3.5rem, 7.39vi + 0.55rem, 10rem);
+    position: relative;
+}
+
+.artists_of_the_month_parent #artist_of_the_month {
+    position: absolute;
+    top: -8rem;
+    left: 0;
 }
 
 .artists_of_the_month_parent .artists_container {

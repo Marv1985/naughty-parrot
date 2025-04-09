@@ -1,0 +1,13 @@
+.events_page_theme_button {
+    transform: translateY(-150%);
+    display: flex;
+    justify-content: center;
+}
+
+/* 800px */
+@media screen and (max-width: 50em) {
+    .events_page_theme_button .dark_mode_button,
+    .events_page_theme_button .slider {
+        height: 3.5rem;
+    }
+}

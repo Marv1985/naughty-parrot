@@ -1,0 +1,24 @@
+{
+  "name": "acf/eventsthemedsection",
+  "title": "Events themed Section",
+  "description": "",
+  "style": "file:./events_themed_section.css",
+  "script": "file:./.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["events"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "events_themed_section.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}

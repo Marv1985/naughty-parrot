@@ -15,7 +15,6 @@
             <?php while (have_rows('podcasts')) : the_row(); 
                 $image_id = get_sub_field('image'); 
                 $image_url = wp_get_attachment_url($image_id);
-                $filetype = wp_check_filetype($image_url);
 
                 $text = esc_html(get_sub_field('text'));
                 $button_text = esc_html(get_sub_field('button_text'));
@@ -24,13 +23,19 @@
                 <a class="podcast" href="<?php echo $button_url; ?>" target="_blank">
                     <?php 
                     // Check if the image is an SVG
-                    if ($filetype['ext'] === 'svg') {
-                        // Get the SVG contents and output it inline
-                        echo file_get_contents($image_url);
-                    } else {
-                        // Output a normal <img> tag for non-SVG images
+                    $response = wp_remote_get($image_url);
+
+                    if (is_wp_error($response)) {
                         echo '<img src="' . esc_url($image_url) . '" alt="user selected image">';
+                    } else {
+                        $svg_contents = wp_remote_retrieve_body($response);
+                        if (strpos($svg_contents, '<svg') !== false) {
+                            echo $svg_contents;
+                        } else {
+                            echo '<img src="' . esc_url($image_url) . '" alt="user selected image">';
+                        }
                     }
+
                     ?>
                     <p class="podcast_title"><?php echo $text; ?></p>
                     <p class="podcast_button"><?php echo $button_text; ?></p>

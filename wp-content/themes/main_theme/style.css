@@ -115,6 +115,7 @@ body {
 	color: var(--text_color);
 	transition: background-color 0.3s, color 0.3s;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .location_dot {
@@ -439,6 +440,7 @@ a {
 
 .dark_mode_button .slider {
 	display: flex;
+	align-items: center;
 	background-color: var(--text_color);
 	gap: 1.8rem;
 	padding: .2rem 1.1rem;

@@ -47,6 +47,24 @@ const menu_button = () => {
             menuTimeline.reverse();
         }
     });
+    
+    // Click event to toggle menu on menu item click
+    lis.forEach((li) => {
+        li.addEventListener('click', () => {
+            header.classList.toggle('open_pop_out_menu');
+            menuButton.classList.toggle('is_active');
+    
+            if (header.classList.contains('open_pop_out_menu')) {
+                menuTimeline.play();
+                menuItemsTimeline.play();
+            } else {
+                gsap.set(lis, { opacity: 0, y: 20 }); 
+                menuItemsTimeline.pause(0);
+                menuTimeline.reverse();
+            }
+        });
+    })
+   
 };
 
 document.addEventListener('DOMContentLoaded', menu_button);

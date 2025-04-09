@@ -14,7 +14,6 @@
 
 .main_title_parent .title_container {
     z-index: 1;
-    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +22,16 @@
 .main_title_parent h3,
 .main_title_parent h1 {
     text-align: center;
+}
+
+.party_theme .main_title_parent,
+.chill_theme .main_title_parent {
+    height: clamp(28rem, 20.45vi + 19.82rem, 46rem);
+}
+
+.party_theme .main_title_parent .title_container,
+.chill_theme .main_title_parent  .title_container {
+    transform: translateY(34%);
 }
 
 .party_theme,
@@ -52,3 +61,4 @@ html.dark .chill_theme .main_title_parent {
 .about_us_page .main_title_parent {
     display: none;
 }
+

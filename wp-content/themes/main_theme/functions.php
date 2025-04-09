@@ -556,6 +556,8 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/podcasts_section' );
     register_block_type( __DIR__ . '/blocks/main_title' );
     register_block_type( __DIR__ . '/blocks/title_and_text_area' );
+    register_block_type( __DIR__ . '/blocks/events_themed_section' );
+    register_block_type( __DIR__ . '/blocks/events_page_theme_button' );
    
 }
 add_action('init', 'register_acf_blocks');

@@ -43,12 +43,12 @@ $taxonomies = get_object_taxonomies($post_type, 'names');
                     foreach ($taxonomies as $taxonomy) {
                         $terms = get_the_terms(get_the_ID(), $taxonomy);
                         if ($terms && ! is_wp_error($terms)) {
-                            echo ucfirst($taxonomy);
+                            echo '<span class="category">' . ucfirst($taxonomy) . '</span>';
                         }
                     }
                 ?>
                 <p><?php echo esc_html($formatted_date); ?></p>
-                <a href='<?php echo $place_url ? $place_url : ""; ?>' target='_blank'>
+                <a class='place' href='<?php echo $place_url ? $place_url : ""; ?>' target='_blank'>
                     <div class="location_dot">
                         <span></span>
                     </div>

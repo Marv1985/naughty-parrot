@@ -1,0 +1,24 @@
+{
+  "name": "acf/eventspagethemebutton",
+  "title": "Events Page Theme Button",
+  "description": "",
+  "style": "file:./events_page_theme_button.css",
+  "script": "file:./.js",
+  "category": "custom-block-category",
+  "icon": "",
+  "keywords": ["events"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "events_page_theme_button.php"
+  },
+  "supports": {
+    "anchor": true
+  },
+  "align": "full",
+  "attributes": {
+      "previewImage": {
+          "type": "string",
+          "default": "full path to image"
+      }
+  }
+}
