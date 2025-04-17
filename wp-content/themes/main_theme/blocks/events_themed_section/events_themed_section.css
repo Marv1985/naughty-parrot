@@ -26,8 +26,15 @@ html.dark .chill_theme .events_themed_parent {
     display: none;
 }
 
+.chill_theme .events_themed_parent,
+.party_theme .events_themed_parent {
+    display: flex;
+    flex-direction: column;
+}
+
 .events_themed_parent {
     padding-bottom: clamp(3.8rem, 7.05vi + 0.98rem, 10rem);
+    display: none;
 }
 
 .events_themed_parent .container {

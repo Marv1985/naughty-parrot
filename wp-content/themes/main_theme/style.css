@@ -16,6 +16,7 @@
 \*---------*/
 
 /* global box-sizing */
+
 *,
 *:after,
 *:before {
@@ -99,6 +100,7 @@ body {
          url('fonts/Avenir.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+	font-display: swap;
 }
 
 :root {
@@ -291,6 +293,7 @@ a {
 	width: 100%;
 	top: 0;
 	left: 0;
+	pointer-events: none;
 }
 
 .header .max_width {
@@ -302,21 +305,25 @@ a {
 
 .header .max_width .web_logo {
 	display: flex;
+	pointer-events: all;
 }
 
 .header .max_width .mobile_logo {
 	display: none;
+	pointer-events: all;
 }
 
 .header .right_side {
 	display: flex;
 	gap: 1rem;
+	pointer-events: all;
 }
 
 /*----------------*\
     POP OUT MENU
 \*----------------*/
 .pop_out_menu {
+	pointer-events: all;
 	background-color: var(--background_color);
 	color: var(--text_color);
 	transform-origin: top right;

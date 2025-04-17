@@ -2,7 +2,7 @@
     height: 100vh;
     min-height: 60rem;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .homepage_intro_parent h1 {

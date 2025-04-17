@@ -36,6 +36,7 @@
 
 .events_slider_parent .slider_buttons {
     position: absolute;
+    pointer-events: none;
     top: 48%;
     left: 0;
     right: 0;
@@ -45,6 +46,11 @@
     justify-content: space-between;
     transform: translateY(50%);
     z-index: 1;
+}
+
+.events_slider_parent .slider_buttons .swiper-button-prev, 
+.events_slider_parent .slider_buttons .swiper-button-next {
+    pointer-events: all;
 }
 
 .events_slider_parent .slider_buttons img {

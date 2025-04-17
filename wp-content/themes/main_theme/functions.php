@@ -145,9 +145,9 @@ function get_involved()
 \*------------------------------------*/
 function frontend_scripts() {
     // Enqueue Styles
-    wp_enqueue_style('anton', 'https://fonts.googleapis.com/css2?family=Anton&display=swap', false);
+    // wp_enqueue_style('anton', 'https://fonts.googleapis.com/css2?family=Anton&display=swap', false);
     wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
-    wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css', false, '1.0', 'all');
 
     // Enqueue Scripts
     wp_enqueue_script('gsap', 'https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js');
@@ -159,9 +159,15 @@ function frontend_scripts() {
     wp_enqueue_script('audio_button', get_template_directory_uri() . '/js/audio_button.js');
     wp_enqueue_script('footer_text_slider', get_template_directory_uri() . '/js/footer_text_slider.js');
     wp_enqueue_script('statistics', get_template_directory_uri() . '/js/statistics.js');
-    // wp_enqueue_script('mouse_move_image', get_template_directory_uri() . '/js/mouse_move_image.js');
     wp_enqueue_script('intro_images_slide_in', get_template_directory_uri() . '/js/intro_images_slide_in.js');
 }
+
+function preload_fonts() {
+    echo '<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&display=swap" onload="this.onload=null;this.rel=\'stylesheet\'">';
+    echo '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap"></noscript>';
+}
+add_action('wp_head', 'preload_fonts', 1);
+
 
 /*------------------------------------*\
     BACKEND SCRIPTS
@@ -169,7 +175,7 @@ function frontend_scripts() {
 function backend_scripts() {
     // Enqueue Styles
     wp_enqueue_style('anton', 'https://fonts.googleapis.com/css2?family=Anton&display=swap', false);
-    wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css', false, '1.0', 'all');
     wp_enqueue_style('backend_styles', get_template_directory_uri() . '/backend_styles.css');
 
    // Enqueue Scripts

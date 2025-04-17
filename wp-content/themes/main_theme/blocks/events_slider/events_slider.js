@@ -11,6 +11,7 @@ const events_slider = () => {
     const swiper = new Swiper(events_slider_swiper, {
         speed: 400,
         spaceBetween: 40,
+        grabCursor: true,
         autoplay: {
             delay: 5000,
           },

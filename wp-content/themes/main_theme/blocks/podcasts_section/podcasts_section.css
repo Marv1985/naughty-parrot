@@ -5,6 +5,7 @@
     justify-content: center;
     flex-wrap: wrap;
     max-width: 100rem;
+    padding-top: 3rem;
     padding-bottom: clamp(6rem, 4.55vi + 4.18rem, 10rem);
 }
 

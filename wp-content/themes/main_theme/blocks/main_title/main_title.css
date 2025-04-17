@@ -1,7 +1,6 @@
 .main_title_parent {
     height: clamp(32rem, 26.14vi + 21.55rem, 55rem);
     position: relative;
-    overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
