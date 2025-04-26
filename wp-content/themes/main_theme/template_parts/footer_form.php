@@ -26,14 +26,16 @@
             <?php get_involved(); ?>
         </div>
 
-        <div class="nav_links contact">
+        <div id="contact" class="nav_links contact">
             <h3>GET IN TOUCH</h3>
+            <?php if($telephone_number): ?>
             <a href="tel:<?php echo $telephone_number; ?>"><?php echo $telephone_number; ?></a>
+            <?php endif; ?>
             <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
         </div>
 
         <div class="back_to_top">
-            <a href='#top_of_page'>
+            <a href='#top-of-page'>
                 BACK<br>
                 TO TOP
             </a>

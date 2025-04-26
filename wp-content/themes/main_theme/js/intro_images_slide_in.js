@@ -75,7 +75,7 @@ const run_intro_images_slide_in = () => {
 
     if (window.innerWidth < 800) {
         tl.fromTo('.mouse_move_images img:nth-of-type(1)',
-            { x: '-50%', y: '-101%' },
+            { x: '0%', y: '-101%' },
             { x: 0, y: '-71%', duration: 2 }, 0
         );
         tl.fromTo('.mouse_move_images img:nth-of-type(2)',
@@ -88,7 +88,7 @@ const run_intro_images_slide_in = () => {
         );
     } else {
         tl.fromTo('.mouse_move_images img:nth-of-type(1)',
-            { x: '70%', y: '-100%' },
+            { x: '0%', y: '-100%' },
             { x: 0, y: '-74%', duration: 2 }, 0
         );
         tl.fromTo('.mouse_move_images img:nth-of-type(2)',

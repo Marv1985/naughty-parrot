@@ -25,7 +25,7 @@
         </script>
 
 	</head>
-	<body id='top_of_page' <?php body_class(); ?>>
+	<body id='top-of-page' <?php body_class(); ?>>
 
 	<?php 
 		$logo = esc_url(get_field('logo', 'option'));
@@ -40,7 +40,7 @@
 					<a class='web_logo' href="<?php echo home_url(); ?>"><img src="<?php echo $logo; ?>" alt="logo"></a>
 					<a class='mobile_logo' href="<?php echo home_url(); ?>"><?php echo $mobile_logo_svg; ?></a>
 					<div class="right_side">
-						<?php if(!is_page('86')): ?>
+						<?php if(!is_page('86') && !is_page('84')): ?>
 							<?php get_template_part( 'template_parts/dark_mode_button'); ?>
 						<?php endif; ?>
 						<?php get_template_part( 'template_parts/menu_button'); ?>

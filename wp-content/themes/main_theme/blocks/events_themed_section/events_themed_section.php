@@ -67,6 +67,7 @@ $taxonomy_slug = strtolower($dark_or_light_only);
                     ?>
 
                     <div class="event_section">
+                    <a class="permalink_clickable_area" href="<?php the_permalink(); ?>"></a>
                         <div class="container max_width">
                             <div class="top">
                                 <div class="left">

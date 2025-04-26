@@ -48,7 +48,7 @@
 
 .homepage_intro_parent .spinning_image {
     width: clamp(10rem, 5.68vi + 7.73rem, 15rem);
-    animation: spin 10s linear;
+    animation: spin 10s linear infinite;
 }
 
 @keyframes spin {

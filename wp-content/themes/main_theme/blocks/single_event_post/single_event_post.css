@@ -1,7 +1,7 @@
 .single_event_post_parent {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: clamp(2.5rem, 1.7vi + 1.82rem, 4rem);
     padding-top: 8rem;
     padding-bottom: clamp(6rem, 4.55vi + 4.18rem, 10rem);
 }
@@ -22,7 +22,7 @@
 .single_event_post_parent .content_area .left {
     display: flex;
     flex-direction: column;
-    gap: clamp(1.5rem, 4.17vi + -1.83rem, 3.5rem);
+    gap: clamp(1.5rem, 1.7vi + 0.82rem, 3rem);
 }
 
 .single_event_post_parent .content_area {
@@ -74,6 +74,6 @@
     }
 
     .single_event_post_parent .content_area {
-        gap: 3rem;
+        gap: 2rem;
     }
 }

@@ -12,6 +12,7 @@
 }
 
 .banner_slider_parent .swiper-wrapper {
+    align-items: center;
     transition-timing-function: linear;
 }
 

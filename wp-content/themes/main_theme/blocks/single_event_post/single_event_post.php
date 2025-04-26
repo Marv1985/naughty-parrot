@@ -58,7 +58,9 @@ $taxonomies = get_object_taxonomies($post_type, 'names');
                 
                
 
+                <?php if($tickets_url): ?>
                 <a class="Fill Border button" href="<?php echo $tickets_url; ?>"><?php echo $tickets_text; ?></a>
+                <?php endif; ?>
             </div>
         </div>
     </div>

@@ -10,10 +10,11 @@ const banner_slider = () => {
         spaceBetween: 13,
         loop: true,
         speed: 5000,  
-        centeredSlides: true,                                                            
+        // centeredSlides: true,                                                            
         slidesPerView: 'auto',
         updateOnWindowResize: true,
         autoplay: {
+            reverseDirection: true,
             delay: 0
         },
         allowTouchMove: false,

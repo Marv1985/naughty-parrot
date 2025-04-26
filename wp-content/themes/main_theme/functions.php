@@ -147,7 +147,9 @@ function frontend_scripts() {
     // Enqueue Styles
     // wp_enqueue_style('anton', 'https://fonts.googleapis.com/css2?family=Anton&display=swap', false);
     wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
-    wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css', false, '1.0', 'all');
+    // wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css', false, '1.0', 'all');
+    wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css', false, filemtime(get_template_directory() . '/style.css'), 'all');
+
 
     // Enqueue Scripts
     wp_enqueue_script('gsap', 'https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js');
@@ -175,7 +177,8 @@ add_action('wp_head', 'preload_fonts', 1);
 function backend_scripts() {
     // Enqueue Styles
     wp_enqueue_style('anton', 'https://fonts.googleapis.com/css2?family=Anton&display=swap', false);
-    wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css', false, '1.0', 'all');
+    // wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css', false, '1.0', 'all');
+    wp_enqueue_style('frontendstyles', get_template_directory_uri() . '/style.css', false, filemtime(get_template_directory() . '/style.css'), 'all');
     wp_enqueue_style('backend_styles', get_template_directory_uri() . '/backend_styles.css');
 
    // Enqueue Scripts

@@ -11,6 +11,11 @@
     margin-bottom: clamp(2rem, 6.82vi + -0.73rem, 8rem);
 }
 
+.main_title_parent .theme_switch_button {
+    position: absolute;
+    bottom: 7rem;
+}
+
 .main_title_parent .title_container {
     z-index: 1;
     display: flex;
@@ -30,7 +35,7 @@
 
 .party_theme .main_title_parent .title_container,
 .chill_theme .main_title_parent  .title_container {
-    transform: translateY(34%);
+    /* transform: translateY(25%); */
 }
 
 .party_theme,
@@ -61,3 +66,9 @@ html.dark .chill_theme .main_title_parent {
     display: none;
 }
 
+/* 800px */
+@media screen and (max-width: 50em) {
+    .main_title_parent .theme_switch_button {
+        display: none;
+    }
+}

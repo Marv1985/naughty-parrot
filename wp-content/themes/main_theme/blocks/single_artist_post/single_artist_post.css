@@ -1,0 +1,17 @@
+
+.single_artist_post_parent a {
+    background-color: var(--bright_yellow);
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.single_artist_post_parent a img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 1.8rem;
+}

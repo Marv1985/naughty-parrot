@@ -85,7 +85,9 @@ $title = esc_html(get_field('title'));
                                     <a class="permalink White Border button" href="<?php the_permalink(); ?>">
                                         More Info
                                     </a>
+                                    <?php if($tickets_url): ?>
                                     <a class="Fill Border button" href="<?php echo $tickets_url; ?>"><?php echo $tickets_text; ?></a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                             <!-- IMAGE -->

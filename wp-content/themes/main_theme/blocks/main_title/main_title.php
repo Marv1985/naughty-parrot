@@ -35,5 +35,10 @@ $dark_or_light_only = get_field('dark_or_light_only');
             <h3><?php echo $sub_title; ?></h3>
             <?php endif; ?>
         </div>
+        <?php if(is_page('84')): ?>
+            <div class="theme_switch_button">
+                <?php get_template_part( 'template_parts/dark_mode_button'); ?>
+            </div>
+        <?php endif; ?>
     </div>
 </section>
