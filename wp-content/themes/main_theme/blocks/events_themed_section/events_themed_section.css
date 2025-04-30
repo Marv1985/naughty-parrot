@@ -70,6 +70,7 @@ html.dark .chill_theme .events_themed_parent {
     display: flex;
     align-items: center;
     gap: .4rem;
+    cursor: pointer;
 }
 
 .events_themed_parent .category {

@@ -73,35 +73,52 @@ const run_intro_images_slide_in = () => {
     const tl = gsap.timeline({ ease: "sine.out" });
     currentTimeline = tl;
 
-    if (window.innerWidth < 800) {
-        tl.fromTo('.mouse_move_images img:nth-of-type(1)',
-            { x: '0%', y: '-101%' },
-            { x: 0, y: '-71%', duration: 2 }, 0
-        );
-        tl.fromTo('.mouse_move_images img:nth-of-type(2)',
-            { x: '30%', y: '-100%' },
-            { x: 0, y: '-57%', duration: 2 }, 0
-        );
-        tl.fromTo('.mouse_move_images img:nth-of-type(3)',
-            { x: '0%', y: '-94%' },
-            { y: '-27%', duration: 1.8 }, 0
-        );
-    } else {
-        tl.fromTo('.mouse_move_images img:nth-of-type(1)',
-            { x: '0%', y: '-100%' },
-            { x: 0, y: '-74%', duration: 2 }, 0
-        );
-        tl.fromTo('.mouse_move_images img:nth-of-type(2)',
-            { x: '-40%', y: '-100%' },
-            { x: 0, y: '-63%', duration: 2 }, 0
-        );
-        tl.fromTo('.mouse_move_images img:nth-of-type(3)',
-            { y: '-100%' },
-            { y: '-39%', duration: 1.8 }, 0
-        );
+    const img_1 = document.querySelector('.mouse_move_images img:nth-of-type(1)')
+    const img_2 = document.querySelector('.mouse_move_images img:nth-of-type(2)')
+    const img_3 = document.querySelector('.mouse_move_images img:nth-of-type(3)')
 
+    if (window.innerWidth < 800) {
+        if (img_1) {
+            tl.fromTo(img_1,
+                { x: '0%', y: '-101%' },
+                { x: 0, y: '-71%', duration: 2 }, 0
+            );
+        }
+        if (img_2) {
+            tl.fromTo(img_2,
+                { x: '30%', y: '-100%' },
+                { x: 0, y: '-57%', duration: 2 }, 0
+            );
+        }
+        if (img_3) {
+            tl.fromTo(img_3,
+                { x: '0%', y: '-94%' },
+                { y: '-27%', duration: 1.8 }, 0
+            );
+        }
+    } else {
+        if (img_1) {
+            tl.fromTo(img_1,
+                { x: '0%', y: '-100%' },
+                { x: 0, y: '-74%', duration: 2 }, 0
+            );
+        }
+        if (img_2) {
+            tl.fromTo(img_2,
+                { x: '-40%', y: '-100%' },
+                { x: 0, y: '-63%', duration: 2 }, 0
+            );
+        }
+        if (img_3) {
+            tl.fromTo(img_3,
+                { y: '-100%' },
+                { y: '-39%', duration: 1.8 }, 0
+            );
+        }
+    
         tl.eventCallback("onComplete", mouse_move_image);
     }
+    
 };
 
 document.addEventListener('DOMContentLoaded', run_intro_images_slide_in);

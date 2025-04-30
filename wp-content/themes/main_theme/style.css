@@ -710,12 +710,25 @@ a {
 	padding-bottom: clamp(4rem, 2.27vi + 3.09rem, 6rem);
 }
 
+.statistics_parent svg path {
+	fill: var(--text_color);
+	transition: all .3s ease;
+}
+
+.statistics_parent svg,
+.statistics_parent img {
+	width: clamp(5rem, 1.14vi + 4.55rem, 6rem);
+	height: clamp(5rem, 1.14vi + 4.55rem, 6rem);
+	margin-bottom: clamp(0.4rem, 0.34vi + 0.26rem, 0.7rem);
+}
+
 .statistics_parent .max_width {
 	display: flex;
 	align-items: center;
 	gap: 3rem;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	align-items: stretch;
 }
 
 .statistics_parent .max_width .stat {
@@ -723,6 +736,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	gap: .3rem;
+	justify-content: flex-end;
 	min-width: calc(25% - 9rem);
 }
 
@@ -918,6 +932,15 @@ a {
 .light .footer_form_parent .nav_links a::after {
 	background-image: url('../main_theme/img/play-icon-white.svg');
 }
+
+.footer_form_parent .address::after {
+	background-image: none !important;
+}
+
+.footer_form_parent .address {
+	margin-bottom: .2rem;
+}
+
 
 
 /*---------*\
